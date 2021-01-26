@@ -1,0 +1,81 @@
+#my-navbar .navbar-top {
+    height: 56px;
+    width: 100%;
+    background-color: blueviolet;
+    color: cornsilk;
+    line-height: 56px;
+}
+
+#my-navbar .navbar-top .nav-wrapper{
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+}
+
+#my-navbar .navbar-top .nav-wrapper .sidebar-toggler{
+    margin-right: 10px;
+}
+
+#my-navbar .navbar-top .nav-wrapper a{
+    text-transform: uppercase;
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#my-navbar .nav-menu {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    background-color: white;
+    width: 250px;
+    left : -105%;
+    /* transform: translateX(-105%); */
+    margin: 0px 0px;
+    padding: 0px;
+    z-index: 999;
+    transition : left 0.5s;
+}
+
+#my-navbar .nav-menu-show {
+    left: 0px;
+}
+
+#my-navbar .nav-menu li > a{
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+#my-navbar .nav-menu li:hover {
+    background-color: #DCDCDC;
+}
+
+#my-navbar .nav-menu .subheader{
+    color: tomato;
+    cursor: auto;
+}
+
+#my-navbar .nav-menu .subheader:hover {
+    background-color:white;
+}
+
+#my-navbar .sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    opacity: 1;
+    display: block;
+}
